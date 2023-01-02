@@ -1,5 +1,5 @@
 import classes from './MeetupItem.module.css';
-import { Card } from '../';
+import { Card } from 'components/index';
 
 export const MeetupItem = ({ id, title, image, address, description }) => {
 	return (

@@ -1,4 +1,4 @@
-import { MeetupList } from './../components';
+import { MeetupList } from 'components';
 
 const DUMMY_DATA = [
 	{
@@ -21,9 +21,9 @@ const DUMMY_DATA = [
 
 export const AllMeetupsPage = () => {
 	return (
-			<section>
-				<h1>All Meetups Page</h1>
-				<MeetupList meetups={DUMMY_DATA} />
-			</section>
+		<section>
+			<h1>All Meetups Page</h1>
+			<MeetupList meetups={DUMMY_DATA} />
+		</section>
 	);
 };
