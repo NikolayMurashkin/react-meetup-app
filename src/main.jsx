@@ -26,6 +26,20 @@ const router = createBrowserRouter([
 		],
 	},
 ]);
+// const router = createBrowserRouter([
+// 	{
+// 		path: '/',
+// 		element: <AllMeetupsPage />,
+// 	},
+// 	{
+// 		path: '/new-meetup',
+// 		element: <NewMeetupPage />,
+// 	},
+// 	{
+// 		path: '/favorites',
+// 		element: <FavoritesPage />,
+// 	},
+// ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
