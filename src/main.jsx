@@ -10,18 +10,20 @@ const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Root />,
-	},
-	{
-		path: '/all-meetups',
-		element: <AllMeetupsPage />,
-	},
-	{
-		path: '/new-meetup',
-		element: <NewMeetupPage />,
-	},
-	{
-		path: '/favorites',
-		element: <FavoritesPage />,
+		children: [
+			{
+				path: 'all-meetups',
+				element: <AllMeetupsPage />,
+			},
+			{
+				path: 'new-meetup',
+				element: <NewMeetupPage />,
+			},
+			{
+				path: 'favorites',
+				element: <FavoritesPage />,
+			},
+		],
 	},
 ]);
 

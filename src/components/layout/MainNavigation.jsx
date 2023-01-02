@@ -1,14 +1,12 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import classes from './MainNavigation.module.css';
 
 export const MainNavigation = () => {
 	return (
-		<header>
-			<div>React Meetups</div>
+		<header className={classes.header}>
+			<div className={classes.logo}>React Meetups</div>
 			<nav>
 				<ul>
-					<li>
-						<Link to={'/'}>Home</Link>
-					</li>
 					<li>
 						<Link to={'/all-meetups'}>All Meetups</Link>
 					</li>
