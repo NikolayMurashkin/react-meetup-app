@@ -7,8 +7,8 @@ export const MeetupList = ({ meetups }) => {
 			{meetups.map((meetup) => {
 				return (
 					<MeetupItem
-						key={meetup.id}
-						id={meetup.id}
+						id={meetup.title}
+						key={meetup.title}
 						title={meetup.title}
 						image={meetup.image}
 						address={meetup.address}
